@@ -75,12 +75,60 @@
 
     <!-- Contenido de la página -->
 
-    <section class="container">
-        <article  class="row mt-4 mb-4">
+    <!-- Carrusel de imágenes -->
+    <!-- Se utiliza el carrusel de Bootstrap para mostrar imágenes de promociones -->
+    <section class="container-carrusel d-flex justify-content-center mt-4 mb-4">
+        <!-- container-carrusel es para centrar el carrusel en la pantalla -->
+        <div id="carouselExampleIndicators" class="carousel slide" style="max-width: 700px; width: 100%;">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/images/carrusel-uno.png" class="d-block mx-auto"
+                        style="width: 100%; max-height: 350px; object-fit: contain;" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/carrusel-dos.png" class="d-block mx-auto"
+                        style="width: 100%; max-height: 350px; object-fit: contain;" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/carrusel-tres.jpg" class="d-block mx-auto"
+                        style="width: 100%; max-height: 350px; object-fit: contain;" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/carrusel-cuatro.png" class="d-block mx-auto"
+                        style="width: 100%; max-height: 350px; object-fit: contain;" alt="...">
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sección de tarjetas de productos -->
+    <section class="container-card">
+        <article class="row mt-4 mb-4">
             <div class="col-lg-4 col-md-6 col-sm-12 mb-2">
                 <div class="card">
                     <a href="./productos/ropa-mujer.html">
-                        <img src="./assets/images/moda-mujer.png" class="card-img-top" alt="moda mujer" >
+                        <img src="./assets/images/moda-mujer.png" class="card-img-top" alt="moda mujer">
                     </a>
                     <div class="card-body">
                         <h5 class="card-title">Moda Mujer</h5>
@@ -102,7 +150,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12 mb-2">
                 <div class="card">
                     <a href="./productos/ropa-mujer.html">
-                        <img src="./assets/images/moda-mujer.png" class="card-img-top" alt="moda mujer">
+                        <img src="./assets/images/moda-children.png" class="card-img-top" alt="moda niños">
                     </a>
                     <div class="card-body">
                         <h5 class="card-title">Niños</h5>
@@ -113,10 +161,71 @@
             <div class="col-lg-4 col-md-6 col-sm-12 mb-2">
                 <div class="card">
                     <a href="./productos/ropa-hombre.html">
-                        <img src="./assets/images/moda-hombre.png" class="card-img-top" alt="moda hombre">
+                        <img src="./assets/images/moda-deportivo.png" class="card-img-top" alt="moda deportiva">
                     </a>
                     <div class="card-body">
                         <h5 class="card-title">Deportivo</h5>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- Sección de tarjetas de joyas -->
+    <section class="container-card-items">
+        <article class="row mt-4 mb-4">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-2">
+                <div class="card">
+                    <img src="./assets/images/joya-uno.png" alt="collar-plata" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Set de collar y aretes de plata elegante</h5>
+                        <p class="card-text">$35.99 USD</p>
+                        <p class="card-subtext">$28.79 USD (-20%)</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-2">
+                <div class="card">
+                    <img src="./assets/images/joya-dos.png" alt="aros-oro" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Aretes de oro minimalistas</h5>
+                        <p class="card-text">$11.90 USD</p>
+                        <p class="card-subtext">$9.52 USD (-20%)</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-2">
+                <div class="card">
+                    <img src="./assets/images/joya-tres.png" alt="collar-plata" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Gargantilla de plata fina</h5>
+                        <p class="card-text">$15.99 USD</p>
+                        <p class="card-subtext">$12.79 USD (-20%)</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-2">
+                <div class="card">
+                    <img src="./assets/images/joya-cuatro.png" alt="pulsera-plata" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Brazalete plateado ajustable</h5>
+                        <p class="card-text">$13 USD</p>
+                        <p class="card-subtext">$10.40 USD (-20%)</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-2">
+                <div class="card">
+                    <img src="./assets/images/joya-cinco.png" alt="aros-oro" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Aretes dorados de acabado mate</h5>
+                        <p class="card-text">$15.90 USD</p>
+                        <p class="card-subtext">$12.72 USD (-20%)</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
                     </div>
                 </div>
             </div>
