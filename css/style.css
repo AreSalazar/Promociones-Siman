@@ -13,3 +13,146 @@ html{
     margin: 0;
     padding: 0;
 }
+
+/* Estilos para el NAVBAR */
+.navbar-siman{
+    background-color: var(--secondary-color); /* variable de color primario */
+}
+
+.navbar-siman .container-fluid .navbar-search input{
+    color: var(--secondary-color);
+    min-width: 30rem; /* Ancho mínimo de la barra de búsqueda */ 
+    width: 50rem; /* Ancho predeterminado de la barra de búsqueda */
+    max-width: 100%; /* Ancho máximo de la barra de búsqueda */
+    justify-content: center; /* Centrar el contenido de la barra de búsqueda */
+}
+
+.navbar-siman .container-fluid .navbar-icons{
+    background: none; /* Sin fondo */
+    color: white; /* Color de los iconos */
+    font-size: 1.5rem; /* Tamaño de fuente de los iconos */
+    gap: 1rem; /* Espacio entre los iconos */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre los iconos */
+
+}
+
+/* Estilos para las CARDS */
+.container-card .card-content{
+    padding: 0.5rem; /* Espacio interno de las cards */
+    margin: 0 auto; /* Margin 0 top y bottom, Margin auto right y left */
+    max-width: 90rem; /* Ancho máximo de las cards */
+    width: 100%; /* Ancho completo de las cards */
+    font-family: 'Inter', sans-serif; /* Fuente Inter para las cards */
+    text-align: center; /* Centrar el texto dentro de las cards */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre las cards */
+
+
+}
+
+.container-card .card-content .card{
+    width: 21rem; 
+    border-radius: 1.5rem; /* Bordes redondeados de las cards */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para las cards */
+    transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
+    background-color: white; /* Fondo blanco para las cards */
+    
+}
+
+.container-card .card-content .card:hover{
+    transform: scale(1.05); /* Escalar la card al pasar el mouse */
+}
+ 
+
+.container-card .card-content .card img{
+    border-radius: 1.5rem;
+
+}
+
+/* Estilos para las CARDS DE PRODUCTOS */
+
+.container-card-items {
+
+}
+
+.container-card-items .card-content-productos{
+
+    margin: 2rem auto; /* Sin margen entre las cards */
+}
+
+.container-card-items .card-content-productos .card{
+
+    height: 100%; /* Para que la card ocupe todo el alto de la columna */
+    min-height: 40vh; /* Altura mínima opcional */ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.container-card-items .card-content-productos .card img{
+    cursor: pointer; /* Cambiar el cursor al pasar sobre la imagen */
+}
+
+.container-card-items .card-content-productos .card .card-body .card-title{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2em;
+}
+
+.container-card-items .card-content-productos .card .card-body .card-text{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
+    color: var(--blue-color);
+    font-style: bold; /* Negrita para el texto */
+    font-weight: 900;
+    margin-top: 1rem;
+}
+
+.container-card-items .card-content-productos .card .card-body .card-subtext{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3em;
+    color: var(--secondary-color);
+    font-style: bold; /* Negrita para el texto */
+    font-weight: 1000;
+   
+}
+
+.container-card-items .card-content-productos .card .card-body .btn-carrito{
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    color: white;
+    background-color: var(--primary-color);
+
+}
+
+.container-card-items .card-content-productos .card .card-body .btn-carrito:hover{
+    background-color: var(--secondary-color);
+
+}
+
+/* Estilos para el FOOTER */
+.footer-siman{
+    margin-top: 2rem;
+}
+
+.footer-siman .container{
+    margin-top: 2rem;
+}
+
+.footer-siman .container .title-footer{
+    font-family: 'Inter', sans-serif; /* Fuente Inter para el título del footer */
+    font-size: 1.2em; /* Tamaño de fuente del título del footer */
+    color: var(--secondary-color); /* Color secundario para el título del footer */
+    font-weight: 600; /* Negrita para el título del footer */
+}
+
+.footer-siman .container .subtitle-footer a{
+    font-family: 'Lato', sans-serif;
+    text-decoration: none; /* Quita el subrayado */
+    color: #333; /* Cambia el color a gris oscuro (puedes ajustar el color) */
+
+}
+
+.footer-siman .container .subtitle-footer a:hover {
+    color: var(--blue-color); /* Color al pasar el mouse, opcional */
+}
