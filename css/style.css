@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); /* Importando fuentes de Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap'); /* Importando fuentes de Google Fonts */
 
+/* ---------------------------------------------------------------------------------------------- */
 /* Estilos globales */
 :root {
     --primary-color: #df1c1a; /* Color primario */
@@ -14,6 +15,7 @@ html{
     padding: 0;
 }
 
+/* ---------------------------------------------------------------------------------------------- */
 /* Estilos para el NAVBAR */
 .navbar-siman{
     background-color: var(--secondary-color); /* variable de color primario */
@@ -28,7 +30,7 @@ html{
 }
 
 .navbar-siman .container-fluid .navbar-icons{
-    background: none; /* Sin fondo */
+    background: none; 
     color: white; /* Color de los iconos */
     font-size: 1.5rem; /* Tamaño de fuente de los iconos */
     gap: 1rem; /* Espacio entre los iconos */
@@ -36,13 +38,14 @@ html{
 
 }
 
+/* ---------------------------------------------------------------------------------------------- */
 /* Estilos para las CARDS */
 .container-card .card-content{
     padding: 0.5rem; /* Espacio interno de las cards */
     margin: 0 auto; /* Margin 0 top y bottom, Margin auto right y left */
     max-width: 90rem; /* Ancho máximo de las cards */
     width: 100%; /* Ancho completo de las cards */
-    font-family: 'Inter', sans-serif; /* Fuente Inter para las cards */
+    font-family: 'Inter', sans-serif; 
     text-align: center; /* Centrar el texto dentro de las cards */
     cursor: pointer; /* Cambiar el cursor al pasar sobre las cards */
 
@@ -51,10 +54,10 @@ html{
 
 .container-card .card-content .card{
     width: 21rem; 
-    border-radius: 1.5rem; /* Bordes redondeados de las cards */
+    border-radius: 1.5rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para las cards */
     transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
-    background-color: white; /* Fondo blanco para las cards */
+    background-color: white; 
     
 }
 
@@ -68,25 +71,19 @@ html{
 
 }
 
+/* ---------------------------------------------------------------------------------------------- */
 /* Estilos para las CARDS DE PRODUCTOS */
-
-.container-card-items {
-
-}
-
 .container-card-items .card-content-productos{
-
     margin: 2rem auto; /* Sin margen entre las cards */
 }
 
 .container-card-items .card-content-productos .card{
 
     height: 100%; /* Para que la card ocupe todo el alto de la columna */
-    min-height: 40vh; /* Altura mínima opcional */ 
+    min-height: 40vh; /* Altura mínima */ 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
 }
 
 .container-card-items .card-content-productos .card img{
@@ -112,7 +109,7 @@ html{
     font-size: 1.3em;
     color: var(--secondary-color);
     font-style: bold; /* Negrita para el texto */
-    font-weight: 1000;
+    font-weight: 1000; /* Ancho de letra */
    
 }
 
@@ -130,6 +127,7 @@ html{
 
 }
 
+/* ---------------------------------------------------------------------------------------------- */
 /* Estilos para el FOOTER */
 .footer-siman{
     margin-top: 2rem;
@@ -149,10 +147,10 @@ html{
 .footer-siman .container .subtitle-footer a{
     font-family: 'Lato', sans-serif;
     text-decoration: none; /* Quita el subrayado */
-    color: #333; /* Cambia el color a gris oscuro (puedes ajustar el color) */
+    color: #333; /* Cambia el color a gris oscuro */
 
 }
 
 .footer-siman .container .subtitle-footer a:hover {
-    color: var(--blue-color); /* Color al pasar el mouse, opcional */
+    color: var(--blue-color); /* Color de letra al pasar el mouse */
 }
